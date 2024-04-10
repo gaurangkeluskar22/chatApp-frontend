@@ -74,7 +74,7 @@ const HomePage = () => {
     },[selectedUser])
 
     const fetchPrevMessages = async () => {
-        axios.get(`http://localhost:9999/api/message/getmessages/${selectedUser?._id}`, headers).then((res)=>{
+        axios.get(`https://chatapp-backend-p2tw.onrender.com:9999/api/message/getmessages/${selectedUser?._id}`, headers).then((res)=>{
             if(res?.data?.success){
                 setMessages(res?.data?.result)
             }
@@ -84,7 +84,7 @@ const HomePage = () => {
     }
 
     const fetchUsers = async () => {
-        axios.get(`http://localhost:9999/api/user/allUsers`, headers).then((res)=>{
+        axios.get(`https://chatapp-backend-p2tw.onrender.com:9999/api/user/allUsers`, headers).then((res)=>{
             if(res?.data?.success){
                 setUsers(res?.data?.results)
             }
@@ -94,7 +94,7 @@ const HomePage = () => {
     }
 
     const fetchLoggedInUserData = async () => {
-        axios.get(`http://localhost:9999/api/auth/getUserData`, headers).then((res)=>{
+        axios.get(`https://chatapp-backend-p2tw.onrender.com:9999/api/auth/getUserData`, headers).then((res)=>{
             if(res?.data?.success){
                 setLoggedInUserData(res?.data?.result)
             }
@@ -127,7 +127,7 @@ const HomePage = () => {
             const payload = {
                 "message" : inputMessage
             }
-            axios.post(`http://localhost:9999/api/message/send/${selectedUser?._id}`, payload, headers).then((res)=>{
+            axios.post(`https://chatapp-backend-p2tw.onrender.com:9999/api/message/send/${selectedUser?._id}`, payload, headers).then((res)=>{
                 if(res?.data?.success){
                     setInputMessage('')
                 }
