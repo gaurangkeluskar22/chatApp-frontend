@@ -1,0 +1,23 @@
+.selected-chat{
+    background-color: #cecece;
+}
+
+.chat-input{
+    width: 50vw;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.chat-send-button{
+    height: 40px;
+    width: 100px;
+    background-color: #8599FF;
+}
+
+.sender-chat-color{
+    background: rgb(133, 153, 255);;
+}
+
+.receiver-chat-color{
+    background: rgb(207, 215, 255);
+}

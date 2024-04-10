@@ -1,0 +1,18 @@
+input, select, button {
+    padding: 5px;
+    margin: 5px;
+    width: 200px; 
+}
+
+select, button{
+    width: 215px;
+}
+
+.button-signup{
+    background: #7C99F1;
+    padding: 10px;
+}
+
+p{
+    margin: 0px;
+}
