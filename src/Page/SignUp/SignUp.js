@@ -55,7 +55,7 @@ const SignUp = () => {
             profilePic : ''
         }
 
-        await axios.post(`https://chatapp-backend-p2tw.onrender.com:9999/api/auth/signup`, payload, headers).then((res)=>{
+        await axios.post(`https://chatapp-backend-p2tw.onrender.com/api/auth/signup`, payload, headers).then((res)=>{
             if(res?.data?.success){
                 navigate('/login')
             }

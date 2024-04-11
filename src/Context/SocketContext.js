@@ -19,7 +19,7 @@ export const SocketContextProvider = ({children}) => {
         if(userId){
             //https://chatapp-3rqf.onrender.com
             //http://localhost:9999
-            const socket = io('https://chatapp-backend-p2tw.onrender.com:9999',{
+            const socket = io('https://chatapp-backend-p2tw.onrender.com',{
                 query:{
                     userId : userId
                 }
